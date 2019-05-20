@@ -23,7 +23,7 @@ func main() {
 		OutTradeNo:     strings.Replace(time.Now().Format("D20060102150405.000000"), ".", "_", -1),
 		TotalFee:       1,
 		SpBillCreateIp: "127.0.0.1",
-		NotifyUrl:      "www.abc.com/wxPayCallback",
+		NotifyUrl:      "http://www.abc.com/wxPayCallback",
 		TradeType:      "NATIVE",
 	}
 	str, err := ac.UnifiedOrderSend(uo)
